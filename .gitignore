@@ -1,3 +1,5 @@
 venv
 notes.txt
 .env
+calculator
+tests.py
