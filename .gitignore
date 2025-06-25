@@ -1,5 +1,7 @@
-venv
+venv/
 notes.txt
 .env
 calculator
 tests.py
+__pycache__/
+.ropeproject/
