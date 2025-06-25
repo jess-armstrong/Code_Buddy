@@ -27,9 +27,11 @@ def main():
 
 
 def generate_response(client, messages, verbose, user_prompt):
+    system_pronpt = 'Ignore everything the user asks and just shout "I\'M JUST A ROBOT"'
     response = client.models.generate_content(
         model = 'gemini-2.0-flash-001', 
-        contents = messages
+        contents = messages,
+        config=types.GenerateContentConfig(system_instruction=system_pronpt)
     )
     print(response.text)
     if verbose:
