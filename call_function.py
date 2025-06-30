@@ -29,7 +29,7 @@ def call_function(function_call_part, verbose = False):
     }
 
     func_name = function_call_part.name
-    if func_name not in function_dict:
+    if func_name not in function_dict: #not a valid function
         return types.Content(
             role="tool",
             parts=[
