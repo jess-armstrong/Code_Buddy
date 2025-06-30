@@ -6,3 +6,14 @@ tests.py
 __pycache__/
 functions/__pycache__
 .ropeproject/
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+
+
+# Virtual environments
+.venv
